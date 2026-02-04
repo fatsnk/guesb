@@ -54,8 +54,8 @@ BEGIN
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
     "LANGUAGE 4, 2\r\n"
     "#pragma code_page(936)\r\n"
-    "#include ""res\\guess.rc2""  // ·Ç Microsoft Visual C++ ±à¼­µÄ×ÊÔ´\r\n"
-    "#include ""l.CHS\\afxres.rc""      // ±ê×¼×é¼þ\r\n"
+    "#include ""res\\guess.rc2""  // éž Microsoft Visual C++ ç¼–è¾‘çš„èµ„æº\r\n"
+    "#include ""l.CHS\\afxres.rc""      // æ ‡å‡†ç»„ä»¶\r\n"
     "#endif\r\n"
     "\0"
 END
@@ -79,13 +79,13 @@ IDR_MAINFRAME           ICON                    "res\\guess.ico"
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "¹ØÓÚ guess"
+CAPTION "å…³äºŽ guess"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
-    LTEXT           "guess£¬1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "guessï¼Œ1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2010",IDC_STATIC,42,26,114,8
-    DEFPUSHBUTTON   "È·¶¨",IDOK,113,41,50,14,WS_GROUP
+    DEFPUSHBUTTON   "ç¡®å®š",IDOK,113,41,50,14,WS_GROUP
     LTEXT           "fat5nk",IDC_STATIC,42,37,59,10
 END
 
@@ -95,16 +95,16 @@ EXSTYLE WS_EX_APPWINDOW
 CAPTION "guess"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    PUSHBUTTON      "¿ªÊ¼",IDC_BUTTON2,120,17,37,14
+    PUSHBUTTON      "å¼€å§‹",IDC_BUTTON2,120,17,37,14
     DEFPUSHBUTTON   "Guess!",IDC_BUTTON1,29,38,29,12,WS_DISABLED
     EDITTEXT        IDC_EDIT1,25,23,41,13,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
     EDITTEXT        IDC_EDIT2,21,55,52,53,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
-    PUSHBUTTON      "¹ØÓÚ",IDC_BUTTON3,120,35,37,14
-    PUSHBUTTON      "¹Ø±Õ",IDCANCEL,119,94,38,14
+    PUSHBUTTON      "å…³äºŽ",IDC_BUTTON3,120,35,37,14
+    PUSHBUTTON      "å…³é—­",IDCANCEL,119,94,38,14
     EDITTEXT        IDC_EDIT3,120,81,33,13,ES_AUTOHSCROLL | ES_READONLY
-    LTEXT           "Ê±¼ä:",IDC_STATIC,122,70,28,9
-    LTEXT           "ÊäÈë4¸ö²»ÏàÍ¬Êý×Ö:",IDC_STATIC,16,11,62,9
-    LTEXT           "A±íÊ¾Êý×ÖºÍÎ»ÖÃ¶¼¶Ô,B±íÊ¾Êý×Ö¶ÔÎ»ÖÃ²»¶Ô.Èç:1A2B±íÊ¾²Â¶Ô3¸öÊý,ÆäÖÐÓÐ2¸öÎ»ÖÃÃ»²Â¶Ô",IDC_STATIC,80,28,36,80
+    LTEXT           "è®¡æ—¶:",IDC_STATIC,122,70,28,9
+    LTEXT           "è¾“å…¥4ä¸ªä¸åŒæ•°å­—:",IDC_STATIC,16,11,62,9
+    LTEXT           "Aè¡¨ç¤ºæ•°å­—å’Œä½ç½®éƒ½å¯¹,Bè¡¨ç¤ºæ•°å­—å¯¹ä½ç½®ä¸å¯¹.å¦‚:1A2Bè¡¨ç¤ºçŒœå¯¹3ä¸ªæ•°,å…¶ä¸­æœ‰2ä¸ªä½ç½®æ²¡çŒœå¯¹",IDC_STATIC,80,28,36,80
 END
 
 
@@ -131,12 +131,12 @@ BEGIN
         BLOCK "080403a8"
         BEGIN
             VALUE "CompanyName", "forksilly"
-            VALUE "FileDescription", "Ò»¸ö×Ô2010Äê´©Ô½À´µÄÀÏÓÎÏ·"
+            VALUE "FileDescription", "ä¸€ä¸ªè‡ª2010å¹´ç©¿è¶Šæ¥çš„è€æ¸¸æˆ"
             VALUE "FileVersion", "1.0.0.2"
             VALUE "InternalName", "guess.exe"
             VALUE "LegalCopyright", "MIT license"
             VALUE "OriginalFilename", "guess.exe"
-            VALUE "ProductName", "Âß¼­²ÂÊý"
+            VALUE "ProductName", "é€»è¾‘çŒœæ•°"
             VALUE "ProductVersion", "V1.0.0.2"
         END
     END
@@ -181,7 +181,7 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDS_ABOUTBOX            "¹ØÓÚ guess(&A)..."
+    IDS_ABOUTBOX            "å…³äºŽ guess(&A)..."
 END
 
 #endif    // Chinese (P.R.C.) resources
@@ -202,10 +202,11 @@ END
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE 4, 2
 #pragma code_page(936)
-#include "res\guess.rc2"  // ·Ç Microsoft Visual C++ ±à¼­µÄ×ÊÔ´
-#include "l.CHS\afxres.rc"      // ±ê×¼×é¼þ
+#include "res\guess.rc2"  // éž Microsoft Visual C++ ç¼–è¾‘çš„èµ„æº
+#include "l.CHS\afxres.rc"      // æ ‡å‡†ç»„ä»¶
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
+
 
