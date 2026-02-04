@@ -1,3 +1,5 @@
+<img width="430" height="362" alt="image" src="https://github.com/user-attachments/assets/3e1bbfe1-07c9-423b-ac32-255254e6d126" />
+
 # guesb
 2010年写的逻辑猜数游戏
 
